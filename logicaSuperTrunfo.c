@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <string.h>
 
-// Estrutura para representar uma carta de cidade
 struct Carta {
     char estado[50];
     char codigo[10];
@@ -12,7 +11,7 @@ struct Carta {
     int pontos_turisticos;
 };
 
-// Função para cadastrar uma carta
+// Cadastrar carta
 void cadastrarCarta(struct Carta *carta, int numero) {
     printf("\nCadastro da Carta %d:\n", numero);
     
@@ -38,7 +37,7 @@ void cadastrarCarta(struct Carta *carta, int numero) {
     scanf("%d", &carta->pontos_turisticos);
 }
 
-// Função para exibir os dados de uma carta
+// Exibir os dados de uma carta
 void exibirCarta(struct Carta carta) {
     printf("\nDetalhes da Carta:\n");
     printf("Estado: %s\n", carta.estado);
@@ -50,7 +49,7 @@ void exibirCarta(struct Carta carta) {
     printf("Pontos Turísticos: %d\n", carta.pontos_turisticos);
 }
 
-// Função para comparar duas cartas
+// Comparação
 void compararCartas(struct Carta carta1, struct Carta carta2, char atributo[20]) {
     printf("\nResultado da Comparação (%s):\n", atributo);
     
